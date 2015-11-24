@@ -1,0 +1,30 @@
+/*titles*/
+
+.hightlight-title{
+	font: rem(55px) $secondaryFont;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: $space;
+}
+
+.box-title{
+	font-size: rem(20px);
+	color: $primaryColor;
+	margin-bottom: 15px;
+}
+
+.section-title{
+	font-weight: 100;
+	text-align: center;
+	font-size: rem(45px);
+	color: $secondaryColor;
+	margin-bottom: ($space-lg * 2);
+}
+
+.topic-title{
+	font-weight: 100;
+	text-align: center;
+	font-size: rem(33px);
+	color: $secondaryColor;
+	margin-bottom: $space-md;
+}

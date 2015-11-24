@@ -1,0 +1,49 @@
+//----------------------- 
+
+//PRIMARY VARIABLES
+
+//-----------------------
+
+//color set
+$primaryColor: #00529e;
+$secondaryColor: #070f25;
+$suportColor: #e1e1e1;
+$suportColorDark: #282828;
+
+
+//grey scale
+$black: rgb(0,0,0); //#000000
+$darkergrey: tint($black, 10%); //#191919
+$darkgrey: tint($black, 25%); //#3f3f3f
+$midgrey: tint($black, 50%); //#7f7f7f
+$lightgrey: tint($black, 75%); //#bfbfbf
+$lightergrey: tint($black, 90%); //#e5e5e5
+$evenlightergrey: tint($black, 94.5%); //#f0f0f0
+$white: rgb(255,255,255); //#ffffff
+
+
+//fonts
+$primaryFont: "montserrat", sans-serif;
+$secondaryFont: "bebas_neueregular", sans-serif;
+
+
+//----------------------
+
+//GRID
+
+//-----------------------
+$max-width: 1280px !global;
+
+
+
+//----------------------
+
+//SPACES
+
+//-----------------------
+$space:    20px; // Regular space margin
+
+$space-xs: ($space / 4); // Extra small space margin
+$space-sm: ($space / 2); // Small space margin
+$space-md: ($space * 2); // Medium space margin
+$space-lg: ($space * 3); // Large space margin

@@ -1,0 +1,1 @@
+var menuIcon=$(".menu-toggle"),menu=$(".page-header .page-nav"),fns={toggleMenu:function(element,target){$(element).on("click",function(){$(target).slideToggle(),$(this).toggleClass("active")})}};fns.toggleMenu(menuIcon,menu);

@@ -1,0 +1,40 @@
+/*buttons*/
+
+@mixin basicButton($bg, $color, $bgHover, $colorHover){
+	border: 1px solid $color;
+	background: $bg;
+	font-size: 16px;
+	font-weight: 100;
+	border: 1px solid $color;
+	padding: 12px 18px;
+	color: $color;
+	position: relative;
+	transition: all .3s;
+
+	&:after{
+		content: "\e90b";
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: rem(28px);
+		position: relative;
+		transform: rotate(90deg);
+		margin-left: 15px;
+	}
+
+	&:hover{
+		background: $bgHover;
+		color: $colorHover;
+		border-color: $colorHover;
+	}
+}

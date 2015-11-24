@@ -1,0 +1,100 @@
+.higthlight-page{
+	background-image: url("../img/banner-destaque-interna.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	color: #fff;
+	margin: 0 auto $space-lg auto;
+	position: relative;
+	
+	.wrapper{
+		height: 500px;
+	}
+
+	.text-content{
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto 0; 
+	}
+
+	p{
+		font-size: rem(15px);
+		font-weight: 300; 
+		margin: 0 auto 20px auto;
+		line-height: 1.7;
+	}
+}
+
+.services{
+	.box-card{
+		@include span-columns(3);
+		text-align: center;
+		
+		.box-title{
+			margin-bottom: 20px;
+			cursor: pointer;
+		}
+
+		&:hover{
+			.box-content{
+				opacity: 1;
+			}
+		}
+		
+		i{
+			font-size: rem(30px);
+			border: 1px solid $primaryColor;
+			border-radius: 50%;
+			width: 55px;
+			height: 55px;
+			line-height: 55px;
+			color: $primaryColor;
+			display: block;
+			margin: 0 auto 10px auto;
+			background: #fff;
+			transition: all 0.3s ease-in-out;
+		}
+
+
+		&:hover i{
+			background: $primaryColor;
+			color: #fff;
+		}
+
+		.box-content{
+			background: #f0f0f0;
+			padding: $space;
+			font-size: rem(14px);
+			font-weight: 300;
+			position: relative;
+			line-height: 1.4;
+			opacity: 0;
+			transition: opacity 0.3s;
+			
+			&:after {
+				content: '';
+				position: absolute;
+				border-style: solid;
+				border-width: 0 15px 15px;
+				border-color: #f0f0f0 transparent;
+				display: block;
+				width: 0;
+				z-index: 1;
+				top: -15px;
+				left: 45%;
+			}
+		}
+	}
+}
+
+
+.partners{
+	text-align: center;
+	margin-bottom: 80px;
+}

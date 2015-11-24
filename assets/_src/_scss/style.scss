@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+	Project: Desafio Mundipagg
+	Author: Isabela Sampaio
+	Version: 1.0
+*/
+
+@import "bourbon";
+@import "neat";
+
+@import "base/_config";
+@import "base/_reset";
+@import "base/_fonts";
+@import "base/_icons";
+@import "base/_titles";
+@import "base/_buttons";
+
+@import "pages/common";
+@import "pages/home";
+@import "pages/services";
+
+@import "base/_responsive";

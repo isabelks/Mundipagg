@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Common
+   ========================================================================== */
+
+body{	
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: $primaryFont;
+	font-size: rem(13px);
+	color: $midgrey;
+}
+
+.wrapper{
+	@include outer-container();
+	position: relative;
+}
+
+
+.btn-white{
+	@include basicButton(transparent, #fff, #fff, $secondaryColor);
+}
+
+.btn-grey{
+	@include basicButton(#bcbcbc, #fff, #fff, $secondaryColor);
+}
+
+
+/*header*/
+.page-header{	
+	padding: $space-md 0;
+
+	.logo{
+		@include span-columns(3);
+
+		a{
+			background: url("../img/mundipagg-logo.png") no-repeat;
+		    background-size: contain;
+			display: block;
+			max-width: 160px;
+		    height: 45px;
+		    width: 100%;
+		    font-size: 0;
+		}
+	}
+
+	.page-nav{
+		@include span-columns(9);
+		text-align: right;
+		margin-top: 10px;
+
+		.nav-link{
+			color: $secondaryColor;
+		}
+
+		li{
+			display: inline-block;
+			margin-left: $space;
+			font-size: rem(14px);	
+		}
+
+		.special-list{
+			border-left: 1px solid $lightgrey;
+			padding-right: $space;
+			margin-left: $space;
+
+			.nav-link{
+				color: $midgrey;
+
+				&:hover{
+				
+				}
+			}
+		}
+	}
+}
+
+
+/*menu*/
+.menu-toggle{
+	font-size: 0;
+	cursor: pointer;
+	float: right;
+	display: none;
+	margin-top: 10px;
+
+	i{
+		font-size: rem(30px);
+		color: $primaryColor;
+	}
+}
+
+.page-nav{
+	.list-nav{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.nav-link{
+		position: relative;
+		padding: 5px 0;
+
+		&::after{
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background: $primaryColor;
+			opacity: 0;
+			-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+			-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+			transition: opacity 0.3s, transform 0.3s;
+			-webkit-transform: translateY(10px);
+			-moz-transform: translateY(10px);
+			transform: translateY(10px);
+		} 
+		
+		&:hover{
+			color: $primaryColor;
+		}
+
+		&:hover::after,
+		&:focus::after {
+			opacity: 1;
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			transform: translateY(0px);
+		}
+	}	
+}
+
+
+/*footer*/
+.page-footer{
+	padding: $space-lg 0; 
+	background: url("../img/bg-footer.jpg") repeat-x bottom $suportColorDark;
+	color: $lightgrey;
+	width: 100%;
+	margin: $space-lg auto 0 auto;
+	/*background: url("../img/footer-bg.png") repeat-x $suportColorDark;*/
+	/*background-blend-mode: multiply;*/
+
+	a{
+		color: $lightgrey;
+	}
+
+	.column{
+		&.contact{
+			@include span-columns(5);
+		}
+		&.links{
+			@include span-columns(4);
+		}
+		&.social{
+			@include span-columns(3);
+		}
+	}
+
+	.contact-phone{
+		margin-bottom: $space-lg;
+
+		p{
+			font-size: rem(16px);
+			font-weight: 300;
+			line-height: 2;
+			
+			strong{
+				font-weight: normal;
+				font-size: 18px;
+			}
+		}
+	}
+
+	.page-nav{
+		.list-nav{
+			margin-right: $space-lg;
+		}
+
+		.nav-link{
+			line-height: 2.4;
+
+			&:after{
+				background: #fff;
+			}
+
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+
+	.social{
+		p{
+			margin-bottom: $space;
+		}
+
+		li{
+			margin-bottom: 13px;
+		}
+		
+		a{
+			&:hover i{
+				color: #fff;
+				opacity: 1;
+			}
+		}
+
+		i{
+			color: #cecece;
+			opacity: 0.5;
+			font-size: rem(30px);
+			vertical-align: middle;
+			margin-right: 10px;
+			transition: all .3s;	
+		}
+	}
+}
+
+
+/*call to action*/
+.call-action{
+	text-align: center;
+	margin: $space-lg auto 0 auto;
+	border-top: 1px solid #e0e0e0;
+	padding-top: 60px;
+
+	p{
+		font-size: rem(16px);
+		margin-bottom: $space-md;
+		color: $suportColorDark;
+		font-weight: 300;
+	}
+
+	.btn{
+		display: inline-block;
+	}
+}

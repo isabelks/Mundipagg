@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+.higthlight-top{
+	background-image: url("../img/banner-destaque.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	color: #fff;
+	margin: 0 auto $space-lg auto;
+	text-align: center;
+	position: relative;
+	
+	.wrapper{
+		height: 600px;
+	}
+
+	.text-content{
+		position: absolute;
+		bottom: 10%;
+		width: 80%;
+		left: 10%;
+	}
+
+	p{
+		font-size: rem(20px);
+		font-weight: 100; 
+		margin: 0 auto 50px auto;
+		width: 80%;
+		line-height: 1.5;
+	}
+
+	.btn{
+		display: inline-block;
+	}
+}
+
+.circle-graph{
+	background: url("../img/mundi-circle.png") no-repeat center;
+	background-size: contain;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 70px auto 120px auto;
+
+	i{
+		font-size: rem(40px);
+		color: $primaryColor;
+		display: block;
+		margin-bottom:5px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.item{
+		position: absolute;
+		width: 24%;
+		padding: 5px;
+		background: #fff;
+	
+		&.pagamento{
+			left: 30px;
+			top: -80px;
+			text-align: right;
+		}
+		&.conversao{
+			right: 30px;
+			top: -80px;
+		}
+		&.integracao{
+			left: 30px;
+			bottom: -60px;
+			text-align: right;
+		}
+		&.mundihelpp{
+			right: 30px;
+			bottom: -60px;
+		}
+
+		p{
+			font-size: rem(16px);
+			font-weight: 300;
+		}
+	}
+}
